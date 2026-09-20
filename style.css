@@ -900,3 +900,58 @@ font-size:30px;
 font-weight:bold;
 
 }
+.quick-overview{
+    width:90%;
+    max-width:1400px;
+    margin:70px auto;
+    text-align:center;
+}
+
+.quick-overview h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#9aa4b2;
+    margin-bottom:45px;
+    font-size:18px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#171b24;
+    border-radius:18px;
+    padding:35px;
+    transition:.35s;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#2f80ff;
+    box-shadow:0 20px 40px rgba(47,128,255,.35);
+}
+
+.card span{
+    font-size:55px;
+    display:block;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#2f80ff;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    line-height:1.8;
+    color:#d6d6d6;
+}
