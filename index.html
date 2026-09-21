@@ -2,6 +2,7 @@
 <html lang="de">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,11 +10,14 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
-
 <body>
-
 
 <nav>
 
@@ -21,17 +25,23 @@
 BMW E90
 </div>
 
+<ul>
 
-<div class="menu">
+<li><a href="#home">Home</a></li>
 
-<a href="#home">Home</a>
-<a href="⁠dashboard">Dashboard</a>
-<a href="#fahrzeug">Fahrzeug</a>
-<a href="#umbauten">Umbauten</a>
-<a href="#service">Service</a>
-<a href="#dokumente">Dokumente</a>
+<li><a href="#fahrzeug">Fahrzeug</a></li>
 
-</div>
+<li><a href="#service">Service</a></li>
+
+<li><a href="#umbauten">Umbauten</a></li>
+
+<li><a href="#galerie">Galerie</a></li>
+
+<li><a href="#dokumente">Dokumente</a></li>
+
+<li><a href="#kosten">Kosten</a></li>
+
+</ul>
 
 </nav>
 
@@ -39,1493 +49,911 @@ BMW E90
 
 <header id="home">
 
+<div class="overlay"></div>
 
-<div class="hero">
+<img src="bilder/titelbild.jpg" class="hero-image">
 
+<div class="hero-content">
 
-<p class="small">
-DIGITALE FAHRZEUGAKTE
-</p>
+<div class="hero-badge">
 
+Digitale Fahrzeugakte
+
+</div>
 
 <h1>
+
 BMW E90 320i
+
 </h1>
 
+<p>
 
-<h2>
-Black Sapphire Metallic
-</h2>
+Black Sapphire Metallic • N46B20 • 150 PS • 6-Gang Handschalter
 
-
-<p class="info">
-N46B20 • 150 PS • 6-Gang Handschalter
 </p>
 
 
-<div class="stats">
 
+<div class="hero-grid">
 
-<div>
-<b>177.000</b>
-<span>KM</span>
+<div class="hero-card">
+
+<h2>177.000</h2>
+
+<span>Kilometer</span>
+
 </div>
 
+<div class="hero-card">
 
-<div>
-<b>2006</b>
+<h2>2006</h2>
+
 <span>Baujahr</span>
+
 </div>
 
+<div class="hero-card">
 
-<div>
-<b>30+</b>
+<h2>30+</h2>
+
 <span>Umbauten</span>
+
 </div>
 
+<div class="hero-card">
 
-<div>
-<b>20+</b>
+<h2>20+</h2>
+
 <span>Services</span>
-</div>
-
 
 </div>
 
+</div>
 
 
-<a class="button" href="⁠dashboard">
-Fahrzeugakte öffnen
+
+<div class="hero-buttons">
+
+<a href="#fahrzeug" class="btn-primary">
+
+Fahrzeug ansehen
+
 </a>
 
+<a href="#service" class="btn-secondary">
+
+Servicehistorie
+
+</a>
 
 </div>
 
+</div>
 
 </header>
-<div class="hero">
-
-    <div class="hero-content">
-
-        <span class="badge">
-            Digitale Fahrzeugakte
-        </span>
-
-        <h1>BMW E90 320i</h1>
-
-        <p>
-            Black Sapphire Metallic • 150 PS • N46B20 • 6-Gang Handschalter
-        </p>
-
-        <div class="hero-stats">
-
-            <div>
-                <h2>177.000</h2>
-                <span>Kilometer</span>
-            </div>
-
-            <div>
-                <h2>2006</h2>
-                <span>Baujahr</span>
-            </div>
-
-            <div>
-                <h2>30+</h2>
-                <span>Umbauten</span>
-            </div>
-
-            <div>
-                <h2>20+</h2>
-                <span>Services</span>
-            </div>
-
-        </div>
-
-        <a href="#fahrzeug" class="hero-button">
-            Fahrzeug entdecken ↓
-        </a>
-
-    </div>
-
-</div>
-<section class="quick-overview">
-
-    <h2>BMW E90 320i Fahrzeugakte</h2>
-    <p class="subtitle">
-        Baujahr 2006 • N46B20 • 150 PS • 6-Gang Handschalter
-    </p>
-
-    <div class="cards">
-
-        <div class="card">
-            <span>🚗</span>
-            <h3>Fahrzeug</h3>
-            <p>
-                BMW E90 320i<br>
-                Black Sapphire Metallic<br>
-                Limousine
-            </p>
-        </div>
-
-        <div class="card">
-            <span>🔧</span>
-            <h3>Service</h3>
-            <p>
-                Ölwechsel alle 5.000 km<br>
-                Thermostat<br>
-                Zündkerzen<br>
-                Sensoren
-            </p>
-        </div>
-
-        <div class="card">
-            <span>🛠️</span>
-            <h3>Umbauten</h3>
-            <p>
-                JOM BlueLine<br>
-                TA Technix<br>
-                Angel Eyes<br>
-                CarPlay
-            </p>
-        </div>
-
-        <div class="card">
-            <span>📄</span>
-            <h3>Dokumente</h3>
-            <p>
-                TÜV<br>
-                Rechnungen<br>
-                Gutachten<br>
-                ABEs
-            </p>
-        </div>
-
-    </div>
-
-</section>
 
 
 
-<section id="dashboard">
-
+<section class="dashboard">
 
 <h2>
+
 Dashboard
+
 </h2>
 
+<p class="subtitle">
+
+Alle wichtigen Informationen auf einen Blick.
+
+</p>
 
 
-<div class="cards">
 
+<div class="dashboard-grid">
 
-<div class="card">
+<div class="dashboard-box">
+
 <h3>🚗 Fahrzeug</h3>
-<p>
-BMW E90 320i Limousine
-</p>
-</div>
 
+<p>BMW E90 320i</p>
 
-
-<div class="card">
-<h3>⚡ Motor</h3>
-<p>
-N46B20<br>
-150 PS
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>📏 Laufleistung</h3>
-<p>
-ca. 177.000 km
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>🔧 Zustand</h3>
-<p>
-Regelmäßig gewartet
-</p>
-</div>
-
-
+<span>Black Sapphire Metallic</span>
 
 </div>
 
+<div class="dashboard-box">
+
+<h3>⚙️ Motor</h3>
+
+<p>N46B20</p>
+<span>150 PS</span>
+
+</div>
+
+<div class="dashboard-box">
+
+<h3>📍 Kilometer</h3>
+
+<p>177.000 km</p>
+
+<span>wird regelmäßig aktualisiert</span>
+
+</div>
+
+<div class="dashboard-box">
+
+<h3>🛠 Umbauten</h3>
+
+<p>30+</p>
+
+<span>vollständig dokumentiert</span>
+
+</div>
+
+<div class="dashboard-box">
+
+<h3>📄 Dokumente</h3>
+
+<p>ABE • TÜV</p>
+
+<span>Rechnungen & Gutachten</span>
+
+</div>
+
+<div class="dashboard-box">
+
+<h3>💰 Investition</h3>
+
+<p>ca. 4.800 €</p>
+
+<span>inkl. Umbauten</span>
+
+</div>
+
+</div>
 
 </section>
-
-
-
 
 
 
 <section id="fahrzeug">
 
 <h2>
+
 Fahrzeugdaten
+
 </h2>
 
+<p class="subtitle">
+
+BMW 320i E90 Limousine
+
+</p>
 
 <div class="cards">
-
+<div class="card">
+    <h3>🚗 Modell</h3>
+    <p>BMW E90 320i Limousine</p>
+</div>
 
 <div class="card">
-<h3>Modell</h3>
-<p>
-BMW E90 320i Limousine
-</p>
+    <h3>📅 Baujahr</h3>
+    <p>2006</p>
 </div>
-
 
 <div class="card">
-<h3>Motor</h3>
-<p>
-N46B20
-</p>
+    <h3>⚙️ Motor</h3>
+    <p>N46B20</p>
 </div>
-
 
 <div class="card">
-<h3>Getriebe</h3>
-<p>
-6-Gang Handschalter
-</p>
+    <h3>🏁 Leistung</h3>
+    <p>150 PS</p>
 </div>
-
 
 <div class="card">
-<h3>Lack</h3>
-<p>
-475 Black Sapphire Metallic
-</p>
+    <h3>🔄 Getriebe</h3>
+    <p>6-Gang Handschalter</p>
 </div>
 
-
+<div class="card">
+    <h3>🎨 Lack</h3>
+    <p>Black Sapphire Metallic (475)</p>
 </div>
 
+<div class="card">
+    <h3>🛞 Antrieb</h3>
+    <p>Heckantrieb</p>
+</div>
+
+<div class="card">
+    <h3>🧾 FIN / VIN</h3>
+    <p>WBAVA71040PR98247</p>
+</div>
+
+<div class="card">
+    <h3>🏭 Produktionsdatum</h3>
+    <p>18.07.2006</p>
+</div>
+
+<div class="card">
+    <h3>📍 Produktionswerk</h3>
+    <p>BMW Regensburg</p>
+</div>
+
+<div class="card">
+    <h3>🌍 Abgasnorm</h3>
+    <p>EURO 4</p>
+</div>
+
+<div class="card">
+    <h3>❤️ Besonderheit</h3>
+    <p>
+        Erstes eigenes Fahrzeug<br>
+        Komplett selbst aufgebaut
+    </p>
+</div>
+
+</div>
 
 </section>
 
 <section id="ausstattung">
 
-<h2>
-✨ Sonderausstattung
-</h2>
+<h2>Sonderausstattung</h2>
 
+<p class="subtitle">
+Originale BMW Werksausstattung
+</p>
 
 <div class="cards">
 
+<div class="card">
+<h3>🪟 Komfort</h3>
+
+<p>
+
+Elektrisches Schiebedach<br>
+Sitzheizung vorne<br>
+Klimaautomatik<br>
+Tempomat<br>
+Lichtpaket<br>
+Regensensor<br>
+Automatisch abblendender Spiegel
+
+</p>
+
+</div>
 
 <div class="card">
-<h3>🌞 Glasdach</h3>
+
+<h3>🎵 Multimedia</h3>
+
 <p>
-Elektrisches Schiebedach
-<br>
-Original BMW Ausstattung
+
+Business Navigation<br>
+HiFi Soundsystem<br>
+CD-Wechsler 6-fach<br>
+CarPlay Nachrüstung
+
 </p>
+
 </div>
-
-
 
 <div class="card">
-<h3>🔥 Sitzheizung</h3>
+
+<h3>🚘 Exterieur</h3>
+
 <p>
-Fahrer & Beifahrer
-<br>
-Komfortausstattung
+
+PDC vorne + hinten<br>
+Nebelscheinwerfer<br>
+Anklappbare Spiegel<br>
+Wagenfarbe Black Sapphire Metallic
+
 </p>
+
 </div>
-
-
 
 <div class="card">
-<h3>🎵 HiFi Soundsystem</h3>
+
+<h3>🪑 Innenraum</h3>
+
 <p>
-BMW HiFi Lautsprechersystem
-<br>
-Original verbaut
+
+Titan Matt Leisten<br>
+Sportlederlenkrad<br>
+MFL<br>
+Durchladesystem<br>
+Armauflage verschiebbar
+
 </p>
+
 </div>
-
-
 
 <div class="card">
-<h3>🧭 Navigation</h3>
+
+<h3>📦 Pakete</h3>
+
 <p>
-BMW Navigation Business
-<br>
-CCC System
+
+Comfort Paket<br>
+Deutschland Ausführung<br>
+Winterräder ab Werk
+
 </p>
-</div>
-
-
-
-<div class="card">
-<h3>🅿️ Park Distance Control</h3>
-<p>
-PDC vorne & hinten
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>💡 Lichtpaket</h3>
-<p>
-Automatische Lichtsteuerung
-<br>
-Regensensor
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>🚘 Spiegelpaket</h3>
-<p>
-Elektrisch anklappbare Außenspiegel
-<br>
-Automatisch abblendender Innenspiegel
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>⚙️ Komfort Paket</h3>
-<p>
-Durchladesystem
-<br>
-Verschiebbare Armauflage
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>🎛 Multifunktionslenkrad</h3>
-<p>
-Sport-Lederlenkrad
-<br>
-Bedienung am Lenkrad
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>❄️ Klima</h3>
-<p>
-Automatische Klimaautomatik
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>🚦 Tempomat</h3>
-<p>
-Geschwindigkeitsregelung
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>📀 CD-Wechsler</h3>
-<p>
-6-fach CD-Wechsler
-</p>
-</div>
-
-
 
 </div>
-
-</section>
-
-
-
-
-
-<section id="details">
-
-<h2>
-📋 Fahrzeug Details
-</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-<h3>VIN</h3>
-<p>
-WBAVA71040PR98247
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>Produktion</h3>
-<p>
-18.07.2006
-<br>
-Werk Regensburg
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>Karosserie</h3>
-<p>
-Limousine
-<br>
-BMW E90
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>Antrieb</h3>
-<p>
-Heckantrieb
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>Motor</h3>
-<p>
-N46B20
-<br>
-EURO 4
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>Lackcode</h3>
-<p>
-475
-<br>
-Black Sapphire Metallic
-</p>
-</div>
-
-
-
-<div class="card">
-<h3>Polster</h3>
-<p>
-Stoff
-<br>
-ALAT
-</p>
-</div>
-<div class="card">
-<h3>Getriebe</h3>
-<p>
-Manuelles 6-Gang Getriebe
-</p>
-</div>
-
-
 
 </div>
 
 </section>
 <section id="umbauten">
 
-<h2>
-🛠 Umbauten & Modifikationen
-</h2>
+<h2>Performance & Umbauten</h2>
 
+<p class="subtitle">
 
-<div class="cards">
+Alle Umbauten wurden dokumentiert und mit Kilometerstand festgehalten.
 
-
-
-<div class="card">
-<h3>📱 CarPlay Display</h3>
-<p>
-<span>✅ Verbaut</span><br><br>
-
-BMW CCC CarPlay Nachrüstung<br><br>
-
-📍 Kilometer: ca. 150.000 km<br>
-💰 Kosten: 180€
 </p>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="icon">🚗</div>
+
+<h3>Fahrwerk</h3>
+
+<p>
+
+JOM BlueLine Gewindefahrwerk<br>
+170.000 km<br>
+250 €
+
+</p>
+
+<span class="status fertig">
+
+✔ Verbaut
+
+</span>
+
 </div>
 
 
 
+<div class="feature-card">
 
-<div class="card">
-<h3>💡 LED Angel Eyes</h3>
+<div class="icon">💨</div>
+
+<h3>Auspuff</h3>
+
 <p>
-<span>✅ Verbaut</span><br><br>
 
-Moderne LED-Ringe für die Frontoptik<br><br>
+TA Technix Endschalldämpfer<br>
+170.000 km<br>
+175 €
 
-📍 Kilometer: ca. 150.000 km<br>
-💰 Kosten: 220€
 </p>
+
+<span class="status fertig">
+
+✔ Verbaut
+
+</span>
+
 </div>
 
 
 
+<div class="feature-card">
 
-<div class="card">
-<h3>🛞 Damina Performance Felgen</h3>
+<div class="icon">💡</div>
+
+<h3>Beleuchtung</h3>
+
 <p>
-<span>✅ Verbaut</span><br><br>
 
-18 Zoll Anthrazit<br>
-Sportliches OEM+ Design<br><br>
+LED Angel Eyes<br>
+Smoked Rückleuchten<br>
+Unterbodenbeleuchtung
 
-💎 DM08 / DM03 Projekt
 </p>
+
+<span class="status fertig">
+
+✔ Verbaut
+
+</span>
+
 </div>
 
 
 
+<div class="feature-card">
 
-<div class="card">
-<h3>🚗 JOM BlueLine Gewindefahrwerk</h3>
+<div class="icon">🎵</div>
+
+<h3>Multimedia</h3>
+
 <p>
-<span>✅ Verbaut</span><br><br>
 
-Sportliche Tieferlegung<br>
-Verbessertes Fahrverhalten<br><br>
+CarPlay Display<br>
+HiFi Soundsystem<br>
+Subwoofer Ausbau
 
-📍 170.000 km<br>
-💰 Kosten: 250€
 </p>
+
+<span class="status fertig">
+
+✔ Verbaut
+
+</span>
+
 </div>
 
 
 
+<div class="feature-card">
 
-<div class="card">
-<h3>💨 TA Technix Endschalldämpfer</h3>
+<div class="icon">🎨</div>
+
+<h3>Optik</h3>
+
 <p>
-<span>✅ Verbaut</span><br><br>
 
-Sportlicher Klang<br>
-Dezente Optik<br><br>
+M3 Front<br>
+M Heckstoßstange<br>
+M Spiegelkappen<br>
+Frontlippe
 
-📍 170.000 km<br>
-💰 Kosten: 175€
 </p>
+
+<span class="status fertig">
+
+✔ Verbaut
+
+</span>
+
 </div>
 
 
 
+<div class="feature-card">
 
-<div class="card">
-<h3>🔵 Bremssättel GT Blue</h3>
+<div class="icon">🛞</div>
+
+<h3>Felgen</h3>
+
 <p>
-<span>✅ Verbaut</span><br><br>
 
-Bremssättel blau lackiert<br>
-Sportliche Akzente<br><br>
+18 Zoll Damina Performance<br>
+Anthrazit<br>
+Schwimmende Radnaben
 
-📍 170.000 km<br>
-💰 Kosten: 30€
 </p>
+
+<span class="status fertig">
+
+✔ Verbaut
+
+</span>
+
 </div>
-
-
-
-
-<div class="card">
-<h3>🪞 M Spiegelkappen</h3>
-<p>
-<span>✅ Verbaut</span><br><br>
-
-M-Optik Außenumbau<br><br>
-
-💰 Kosten: ca. 20€
-</p>
-</div>
-
-
-
-
-<div class="card">
-<h3>🖤 Black Optik</h3>
-<p>
-<span>✅ Verbaut</span><br><br>
-
-Schwarze Nieren<br>
-Schwarze Details<br>
-Cleanes Erscheinungsbild
-</p>
-</div>
-
-
-
-
-<div class="card">
-<h3>🔴 Smoked Rückleuchten</h3>
-<p>
-<span>✅ Verbaut</span><br><br>
-
-Dunkle Rückleuchten<br>
-Modernere Heckoptik<br><br>
-
-📍 174.000 km<br>
-💰 Kosten: 180€
-</p>
-</div>
-
-
-
-
-<div class="card">
-<h3>🚘 M3 Front</h3>
-<p>
-<span>🔄 Umbau</span><br><br>
-
-Sportliche Frontoptik geplant/verbaut<br><br>
-
-💰 ca. 100€
-</p>
-</div>
-
-
-
-
-<div class="card">
-<h3>🚘 M Heckstoßstange</h3>
-<p>
-<span>🔄 Umbau</span><br><br>
-M-Paket Heckoptik<br><br>
-
-💰 ca. 150€
-</p>
-</div>
-
-
-
-
-<div class="card">
-<h3>🔊 Audio Ausbau</h3>
-<p>
-<span>🔄 Geplant</span><br><br>
-
-Emphaser Subwoofer<br>
-Magnat Komponenten<br>
-Kofferraum Ausbau
-</p>
-</div>
-
-
-
-
-<div class="card">
-<h3>💡 Unterbodenbeleuchtung</h3>
-<p>
-<span>✅ Verbaut</span><br><br>
-
-LED Nachrüstung<br><br>
-
-📍 173.000 km<br>
-💰 Kosten: 30€
-</p>
-</div>
-
-
-
-
-<div class="card">
-<h3>🎛 Lenkrad Alcantara</h3>
-<p>
-<span>✅ Verbaut</span><br><br>
-
-Alcantara Überzug<br>
-OEM+ Innenraum Upgrade<br><br>
-
-💰 Kosten: 12€
-</p>
-</div>
-
-
-
 
 </div>
 
 </section>
+
+
+
+
+
 <section id="service">
 
+<h2>Digitales Serviceheft</h2>
 
-<h2>
-🔧 Service & Reparaturhistorie
-</h2>
+<p class="subtitle">
 
-
-<div class="service-timeline">
-
-
-
-<div class="service-item">
-
-<div class="service-km">
-150.000 km
-</div>
-
-<div class="service-date">
-Wartung & Pflege
-</div>
-
-<h3>
-Großer Service
-</h3>
-
-<p>
-
-🔋 Neue Batterie<br>
-🔥 NGK Zündkerzen erneuert<br>
-🧼 Drosselklappe gereinigt<br>
-⚙️ VANOS Magnetventile gereinigt
+Regelmäßige Wartung und Reparaturen
 
 </p>
 
-<span class="price">
-ca. 150€
-</span>
 
-</div>
+
+<div class="timeline">
 
 
 
+<div class="timeline-item">
 
+<div class="timeline-dot"></div>
 
-<div class="service-item">
+<div class="timeline-content">
 
-<div class="service-km">
-160.000 km
-</div>
+<h3>177.000 km</h3>
 
-<div class="service-date">
-Reparaturen
-</div>
-
-<h3>
-Motor Nebenarbeiten
-</h3>
+<h4>Mahle Thermostat</h4>
 
 <p>
 
-⚡ Lichtmaschine repariert<br>
-🔧 Vakuumpumpendichtung erneuert<br>
-🛢 Ölkühlerdichtung erneuert
+✔ Thermostat erneuert<br>
 
-</p>
-
-<span class="price">
-ca. 16€
-</span>
-
-</div>
-
-
-
-
-
-<div class="service-item">
-
-<div class="service-km">
-165.000 km
-</div>
-
-<div class="service-date">
-Fahrwerk & Sicherheit
-</div>
-
-<h3>
-Raddrehzahlsensor
-</h3>
-
-<p>
-
-ABS/Raddrehzahlsensor hinten links<br>
-HELLA Ersatzteil
-
-</p>
-
-<span class="price">
-ca. 40€
-</span>
-
-</div>
-
-
-
-
-
-<div class="service-item">
-
-<div class="service-km">
-170.000 km
-</div>
-
-<div class="service-date">
-Fahrwerk Umbau
-</div>
-
-<h3>
-Sport Setup
-</h3>
-
-<p>
-
-🚗 JOM BlueLine Gewindefahrwerk<br>
-💨 TA Technix Endschalldämpfer<br>
-🛞 Spurplatten<br>
-🔩 Verlängerte Radschrauben<br>
-🔵 Bremssättel GT Blue<br>
-🔧 FEBI Spurstangenköpfe
-
-</p>
-
-<span class="price">
-ca. 525€
-</span>
-
-</div>
-
-
-
-
-
-<div class="service-item">
-
-<div class="service-km">
-173.000 km
-</div>
-
-<div class="service-date">
-Motor Wartung
-</div>
-
-<h3>
-N46 Pflege
-</h3>
-
-<p>
-
-🔧 KGE Metzger erneuert<br>
-🛢 Motul 5W40 LongLife-01 Ölwechsel<br>
-💡 Unterbodenbeleuchtung verbaut
-
-</p>
-
-<span class="price">
-ca. 85€
-</span>
-
-</div>
-
-
-
-
-
-<div class="service-item">
-
-<div class="service-km">
-174.000 km
-</div>
-
-<div class="service-date">
-Reparatur
-</div>
-
-<h3>
-Radlager & Heck
-</h3>
-
-<p>
-
-🛞 SKF Radlager rechts<br>
-🔴 Smoked Rückleuchten verbaut
-</p>
-
-<span class="price">
-ca. 180€
-</span>
-
-</div>
-
-
-
-
-
-<div class="service-item">
-
-<div class="service-km">
-175.450 km
-</div>
-
-<div class="service-date">
-07.09.2026
-</div>
-
-<h3>
-Flüssigkeiten erneuert
-</h3>
-
-<p>
-
-💧 Kühlwasser<br>
-🛢 Motoröl<br>
-🛞 Servoöl
+✔ Kühlsystem entlüftet
 
 </p>
 
 </div>
 
-
-
-
-
-<div class="service-item">
-
-<div class="service-km">
-177.000 km
 </div>
 
-<div class="service-date">
-2026
-</div>
 
-<h3>
-Kühlsystem
-</h3>
+
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<h3>175.450 km</h3>
+
+<h4>Großer Service</h4>
 
 <p>
+✔ Motoröl Motul 5W40 LL-01<br>
 
-🌡 Mahle Thermostat erneuert
+✔ Ölfilter<br>
 
-</p>
+✔ Kühlwasser<br>
 
-<span class="price">
-ca. 50€
-</span>
-
-</div>
-
-
-
-
-
-<div class="service-item">
-
-<div class="service-km">
-Alle 5.000 km
-</div>
-
-<div class="service-date">
-Regelmäßige Wartung
-</div>
-
-<h3>
-Ölservice
-</h3>
-
-<p>
-
-🛢 Motorölwechsel mit Filter<br>
-Öl: Motul 5W40 LongLife-01
+✔ Servoöl
 
 </p>
 
 </div>
 
+</div>
+
+
+
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<h3>173.000 km</h3>
+
+<h4>KGE</h4>
+
+<p>
+
+✔ Kurbelgehäuseentlüftung Metzger
+
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<h3>170.000 km</h3>
+
+<h4>Fahrwerk Umbau</h4>
+
+<p>
+
+✔ Gewindefahrwerk<br>
+
+✔ Spurplatten<br>
+
+✔ Radschrauben<br>
+
+✔ Bremssättel GT Blue
+
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<h3>150.000 km</h3>
+
+<h4>Motorwartung</h4>
+
+<p>
+
+✔ Batterie<br>
+
+✔ NGK Zündkerzen<br>
+
+✔ VANOS gereinigt<br>
+
+✔ Drosselklappe gereinigt
+
+</p>
+
+</div>
+
+</div>
 
 
 
 </div>
-
 
 </section>
+<div class="gallery-item">
+
+<img src="bilder/galerie/front.jpg" alt="Front">
+
+<div class="gallery-overlay">
+<h3>Frontansicht</h3>
+</div>
+
+</div>
+
+
+
+<div id="lightbox">
+
+<span id="close">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+</section>
+
+
+
 <section id="dokumente">
 
+<h2>Dokumente</h2>
 
-<h2>
-📄 Dokumente & Nachweise
-</h2>
+<p class="subtitle">
+Alle Nachweise an einem Ort
+</p>
 
+<div class="document-grid">
 
+<div class="document-card">
 
-<div class="cards">
+<h3>📄 TÜV</h3>
+
+<p>
+HU-Berichte<br>
+Eintragungen
+</p>
+
+<a href="dokumente/tuev.pdf" target="_blank">
+
+Öffnen
+
+</a>
+
+</div>
 
 
 
 <div class="document-card">
 
-<div class="document-icon">
-📜
-</div>
-
-<h3>
-ABE & Gutachten
-</h3>
+<h3>📑 Gutachten</h3>
 
 <p>
 
-Felgen<br>
 Fahrwerk<br>
-Spurplatten<br>
-Eintragungen
+Felgen<br>
+Spurplatten
 
 </p>
 
+<a href="dokumente/gutachten.pdf" target="_blank">
 
-<a class="document-button"
-href="dokumente/abe">
 Öffnen
+
 </a>
 
-
 </div>
-
-
 
 
 
 <div class="document-card">
 
-<div class="document-icon">
-🔧
-</div>
-
-<h3>
-TÜV Dokumente
-</h3>
+<h3>🧾 Rechnungen</h3>
 
 <p>
 
-HU Berichte<br>
-Abnahmen<br>
-Eintragungen
+Werkstatt<br>
+Autodoc<br>
+BMW
 
 </p>
 
+<a href="dokumente/rechnungen.pdf" target="_blank">
 
-<a class="document-button"
-href="dokumente/tuev">
 Öffnen
+
 </a>
 
-
 </div>
-
-
-
 
 
 
 <div class="document-card">
 
-<div class="document-icon">
-🧾
-</div>
-
-<h3>
-Rechnungen
-</h3>
+<h3>🛠 Serviceheft</h3>
 
 <p>
 
-Teilekäufe<br>
-Reparaturen<br>
-Umbauten
+Digitale Historie
 
 </p>
 
+<a href="dokumente/service.pdf" target="_blank">
 
-<a class="document-button"
-href="dokumente/rechnungen">
 Öffnen
+
 </a>
 
-
 </div>
 
-
-
-
-
-
-
-<div class="document-card">
-
-<div class="document-icon">
-🛢
 </div>
-
-<h3>
-Service Nachweise
-</h3>
-
-<p>
-
-Ölwechsel<br>
-Wartungen<br>
-Reparaturen
-
-</p>
-
-
-<a class="document-button"
-href="dokumente/service">
-Öffnen
-</a>
-
-
-</div>
-
-
-
-
-</div>
-
 
 </section>
-<section id="galerie">
 
 
-<h2>
-📸 Galerie
-</h2>
 
 
 
-<div class="gallery">
-
-
-
-<div class="gallery-card">
-
-<img src="bilder/galerie/aussen/e90_vorne.jpg">
-
-
-<div class="gallery-text">
-
-<h3>
-Außenansicht
-</h3>
-
-<p>
-Black Sapphire Metallic
-<br>
-BMW E90 320i
-</p>
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="gallery-card">
-
-<img src="bilder/galerie/umbauten/fahrwerk.jpg">
-
-
-<div class="gallery-text">
-
-<h3>
-Fahrwerk Umbau
-</h3>
-
-<p>
-JOM BlueLine Gewindefahrwerk
-<br>
-170.000 km
-</p>
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="gallery-card">
-
-<img src="bilder/galerie/umbauten/felgen.jpg">
-
-
-<div class="gallery-text">
-
-<h3>
-Felgen Setup
-</h3>
-
-<p>
-Damina Performance
-<br>
-18 Zoll Anthrazit
-</p>
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="gallery-card">
-
-<img src="bilder/galerie/nachher/heck.jpg">
-
-
-<div class="gallery-text">
-
-<h3>
-Heck Umbau
-</h3>
-
-<p>
-Smoked Rückleuchten
-<br>
-M-Optik
-</p>
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="gallery-card">
-
-<img src="bilder/galerie/innen/innenraum.jpg">
-
-
-<div class="gallery-text">
-
-<h3>
-Innenraum
-</h3>
-
-<p>
-CarPlay
-<br>
-Alcantara Details
-</p>
-
-</div>
-
-</div>
-
-
-
-</div>
-
-
-</section>
 <section id="kosten">
 
+<h2>Investition</h2>
+
+<p class="subtitle">
+
+Gesamtkosten des Projektes
+
+</p>
+
+<div class="dashboard-grid">
+
+<div class="dashboard-box">
+<h3>🚗 Kaufpreis</h3>
+
+<h2>2.000 €</h2>
+
+</div>
+
+<div class="dashboard-box">
+
+<h3>🛠 Umbauten</h3>
+
+<h2>≈1.800 €</h2>
+
+</div>
+
+<div class="dashboard-box">
+
+<h3>🔧 Wartung</h3>
+
+<h2>≈700 €</h2>
+
+</div>
+
+<div class="dashboard-box">
+
+<h3>🎵 Audio</h3>
+
+<h2>≈300 €</h2>
+
+</div>
+
+</div>
+
+<div class="total-box">
 
 <h2>
-💰 Kostenübersicht
+
+Gesamt investiert
+
 </h2>
 
+<h1>
 
+≈4.800 €
 
-<div class="cards">
-
-
-
-<div class="cost-box">
-
-<h3>
-🚗 Fahrzeug
-</h3>
-
-<div class="cost-number">
-2000€
-</div>
-
-<p>
-Kaufpreis BMW E90 320i
-</p>
+</h1>
 
 </div>
-
-
-
-
-
-<div class="cost-box">
-
-<h3>
-🔧 Wartung & Reparaturen
-</h3>
-
-<div class="cost-number">
-≈700€
-</div>
-
-<p>
-
-Batterie<br>
-Sensoren<br>
-Dichtungen<br>
-Thermostat<br>
-Service
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="cost-box">
-
-<h3>
-🛠 Umbauten
-</h3>
-
-<div class="cost-number">
-≈1800€
-</div>
-
-<p>
-
-Fahrwerk<br>
-Auspuff<br>
-Felgen<br>
-Optik<br>
-CarPlay
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="cost-box">
-
-<h3>
-🔊 Audio
-</h3>
-
-<div class="cost-number">
-≈300€
-</div>
-
-<p>
-
-Subwoofer<br>
-Endstufen<br>
-Kabel<br>
-Ausbau geplant
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<div class="total-cost">
-
-<h3>
-Gesamt investiert
-</h3>
-
-
-<span>
-≈4800€
-</span>
-
-
-</div>
-
-
 
 </section>
+
+
+
+
+
 <section id="qr">
 
+<h2>QR-Code</h2>
 
-<h2>
-📱 Digitale Fahrzeugakte
-</h2>
+<p class="subtitle">
 
-
-
-<div class="card qr-box">
-
-
-<h3>
-BMW E90 320i
-</h3>
-
-
-<p>
-
-Scanne den QR-Code für alle Informationen:
-
-<br><br>
-
-✔ Umbauten<br>
-✔ Service<br>
-✔ Dokumente<br>
-✔ Bilder<br>
-✔ Ausstattung
+Digitale Fahrzeugakte jederzeit auf dem Smartphone
 
 </p>
 
+<div class="qr-container">
 
-<div class="qr-placeholder">
+<img src="bilder/qr/qrcode.png" alt="QR Code">
 
-QR CODE
+<p>
+
+QR-Code scannen und Fahrzeugakte öffnen.
+
+</p>
 
 </div>
-
-
-</div>
-
 
 </section>
+
+
+
+
+
 <footer>
 
-BMW E90 Digitale Fahrzeugakte
+<div class="footer-content">
+
+<h2>
+
+BMW E90 320i
+
+</h2>
+
+<p>
+
+Digitale Fahrzeugakte
+
+</p>
+
+<p>
+
+Baujahr 2006 • N46B20 • Black Sapphire Metallic
+
+</p>
+
+</div>
 
 </footer>
 
-
+<script src="script.js"></script>
 
 </body>
 
