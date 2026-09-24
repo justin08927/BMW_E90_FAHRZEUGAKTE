@@ -1,637 +1,36 @@
-/* ===========================
-   BMW E90 Premium Design
-=========================== */
+/* BMW INFO */
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-
-font-family:"Poppins",sans-serif;
-
-background:#07090d;
-
-color:#fff;
-
-overflow-x:hidden;
-
-}
-
-
-
-body::before{
-
-content:"";
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-background:
-
-radial-gradient(circle at top,#1e88ff22,transparent 55%);
-
-z-index:-1;
-
-}
-
-
-
-nav{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-padding:22px 8%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-background:rgba(8,10,15,.75);
-
-backdrop-filter:blur(20px);
-
-border-bottom:1px solid rgba(255,255,255,.05);
-
-z-index:999;
-
-}
-
-
-
-.logo{
-
-font-size:30px;
-
-font-weight:800;
-
-letter-spacing:2px;
-
-color:#1e88ff;
-
-}
-
-
-
-nav ul{
-
-display:flex;
-
-gap:35px;
-
-list-style:none;
-
-}
-
-
-
-nav a{
-
-color:white;
-
-text-decoration:none;
-
-font-weight:500;
-
-transition:.3s;
-
-}
-
-
-
-nav a:hover{
-
-color:#1e88ff;
-
-}
-
-
-
-header{
-
-height:100vh;
-
-position:relative;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-overflow:hidden;
-
-}
-
-
-
-.hero-image{
-
-position:absolute;
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-}
-
-
-
-.overlay{
-
-position:absolute;
-
-width:100%;
-
-height:100%;
-
-background:
-
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.85));
-
-}
-
-
-
-.hero-content{
-
-position:relative;
-
-z-index:2;
-
-text-align:center;
-
-max-width:1000px;
-
-padding:20px;
-
-}
-
-
-
-.hero-badge{
-
-display:inline-block;
-
-padding:10px 28px;
-
-background:#1e88ff;
-
-border-radius:40px;
-
-font-weight:700;
-
-margin-bottom:30px;
-
-}
-
-
-
-.hero h1,
-.hero-content h1{
-
-font-size:82px;
-
-font-weight:800;
-
-margin-bottom:20px;
-
-}
-
-
-
-.hero-content p{
-
-font-size:22px;
-
-color:#ddd;
-
-margin-bottom:55px;
-
-}
-
-
-
-.hero-grid{
+.bmw-info{
 
 display:grid;
 
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
 gap:25px;
 
-margin-bottom:50px;
+margin:80px 0;
 
 }
 
-
-
-.hero-card{
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(15px);
-
-border:1px solid rgba(255,255,255,.08);
-border-radius:22px;
-
-padding:30px;
-
-transition:.35s;
-
-}
-
-
-
-.hero-card:hover{
-
-transform:translateY(-12px);
-
-border-color:#1e88ff;
-
-box-shadow:0 20px 45px rgba(30,136,255,.35);
-
-}
-
-
-
-.hero-card h2{
-
-font-size:38px;
-
-color:#1e88ff;
-
-margin-bottom:8px;
-
-}
-
-
-
-.hero-buttons{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.btn-primary{
-
-background:#1e88ff;
-
-padding:16px 42px;
-
-border-radius:40px;
-
-text-decoration:none;
-
-color:white;
-
-font-weight:700;
-
-transition:.3s;
-
-}
-
-
-
-.btn-primary:hover{
-
-transform:translateY(-6px);
-
-}
-
-
-
-.btn-secondary{
-
-padding:16px 42px;
-
-border-radius:40px;
-
-border:2px solid #1e88ff;
-
-text-decoration:none;
-
-color:white;
-
-font-weight:700;
-
-transition:.3s;
-
-}
-
-
-
-.btn-secondary:hover{
-
-background:#1e88ff;
-
-}
-
-
-
-section{
-
-width:88%;
-
-max-width:1500px;
-
-margin:auto;
-
-padding:90px 0;
-
-}
-
-
-
-h2{
-
-font-size:46px;
-
-margin-bottom:15px;
-
-text-align:center;
-
-}
-
-
-
-.subtitle{
-
-text-align:center;
-
-color:#9fa7b5;
-
-margin-bottom:50px;
-
-font-size:18px;
-
-}
-/* ===========================
-   DASHBOARD
-=========================== /
-
-.dashboard-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-}
-
-
-
-.dashboard-box{
+.bmw-card{
 
 background:rgba(255,255,255,.06);
 
 backdrop-filter:blur(18px);
 
-border-radius:24px;
+border-radius:22px;
 
-padding:35px;
+padding:30px;
+
+text-align:center;
 
 border:1px solid rgba(255,255,255,.08);
 
 transition:.35s;
 
-overflow:hidden;
-
-position:relative;
-
 }
 
-
-
-.dashboard-box::before{
-
-content:"";
-
-position:absolute;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:4px;
-
-background:#1e88ff;
-
-}
-
-
-
-.dashboard-box:hover{
-
-transform:translateY(-12px);
-
-box-shadow:0 20px 45px rgba(30,136,255,.30);
-
-border-color:#1e88ff;
-
-}
-
-
-
-.dashboard-box h3{
-
-font-size:24px;
-
-margin-bottom:15px;
-
-color:#1e88ff;
-
-}
-
-
-
-.dashboard-box p{
-
-font-size:28px;
-
-font-weight:700;
-
-margin-bottom:10px;
-
-}
-
-
-
-.dashboard-box span{
-
-color:#b8c2d0;
-
-}
-
-
-
-/ ===========================
-   KARTEN
-=========================== /
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
-gap:30px;
-
-}
-
-
-
-.card{
-
-background:linear-gradient(145deg,#14181f,#0b0d12);
-
-border-radius:24px;
-
-padding:35px;
-
-border:1px solid rgba(255,255,255,.06);
-
-transition:.35s;
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-
-
-.card::after{
-
-content:"";
-
-position:absolute;
-
-top:-100%;
-
-left:-50%;
-
-width:220%;
-
-height:220%;
-
-background:linear-gradient(transparent,rgba(255,255,255,.05),transparent);
-
-transform:rotate(25deg);
-
-transition:.7s;
-
-}
-
-
-
-.card:hover::after{
-
-top:120%;
-
-}
-
-
-
-.card:hover{
-
-transform:translateY(-12px);
-
-border-color:#1e88ff;
-
-box-shadow:0 25px 50px rgba(30,136,255,.25);
-
-}
-
-
-
-.card h3{
-
-font-size:24px;
-
-margin-bottom:18px;
-
-color:#1e88ff;
-
-}
-
-
-
-.card p{
-
-line-height:1.9;
-
-color:#d8d8d8;
-
-}
-
-
-
-/ ===========================
-   FEATURE CARDS
-=========================== */
-
-.feature-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
-
-gap:35px;
-
-}
-
-
-
-.feature-card{
-
-background:#10141b;
-
-padding:35px;
-border-radius:25px;
-
-text-align:center;
-
-border:1px solid rgba(255,255,255,.05);
-
-transition:.35s;
-
-}
-
-
-
-.feature-card:hover{
+.bmw-card:hover{
 
 transform:translateY(-10px);
 
@@ -641,19 +40,120 @@ box-shadow:0 20px 45px rgba(30,136,255,.25);
 
 }
 
+.bmw-card i{
 
+font-size:42px;
 
-.icon{
+margin-bottom:18px;
 
-font-size:60px;
-
-margin-bottom:20px;
+color:#1e88ff;
 
 }
 
+.bmw-card h3{
 
+margin-bottom:10px;
 
-.feature-card h3{
+font-size:22px;
+
+}
+
+.bmw-card p{
+
+color:#cfd6df;
+
+font-size:16px;
+
+}
+/* PROJECT GARAGE */
+
+.garage-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+.garage-card{
+
+background:#10151d;
+
+border-radius:25px;
+
+overflow:hidden;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.garage-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 25px 45px rgba(30,136,255,.30);
+
+border-color:#1e88ff;
+
+}
+
+.garage-image{
+
+height:230px;
+
+overflow:hidden;
+
+}
+
+.garage-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.garage-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.garage-content{
+
+padding:30px;
+
+}
+
+.badge{
+
+display:inline-block;
+
+background:#1e88ff;
+
+padding:8px 18px;
+
+border-radius:25px;
+
+font-size:14px;
+
+margin-bottom:18px;
+
+font-weight:600;
+
+}
+
+.garage-content h3{
 
 font-size:28px;
 
@@ -661,208 +161,481 @@ margin-bottom:15px;
 
 }
 
+.garage-content p{
 
+color:#cfd6df;
 
-.feature-card p{
-
-line-height:1.9;
-
-color:#d0d0d0;
+line-height:1.7;
 
 margin-bottom:25px;
 
 }
 
+.garage-info{
 
+display:grid;
 
-.status{
+grid-template-columns:repeat(3,1fr);
 
-display:inline-block;
+gap:15px;
 
-padding:10px 24px;
-
-border-radius:30px;
-
-font-weight:700;
+text-align:center;
 
 }
 
+.garage-info strong{
 
+display:block;
 
-.fertig{
+color:#1e88ff;
 
-background:#1e88ff;
+margin-bottom:6px;
+
+}
+
+.garage-info span{
 
 color:white;
 
 }
-/* ===========================
-   TIMELINE
-=========================== /
+/* PROJECT STATUS */
 
-.timeline{
+.project-status{
 
-position:relative;
-
-max-width:1000px;
-
-margin:0 auto;
-
-padding-left:40px;
-
-border-left:3px solid #1e88ff;
+margin:100px 0;
 
 }
 
-.timeline-item{
+.status-grid{
 
-position:relative;
+display:grid;
 
-margin-bottom:45px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-}
+gap:30px;
 
-.timeline-dot{
-
-position:absolute;
-
-left:-52px;
-
-top:8px;
-
-width:20px;
-
-height:20px;
-
-border-radius:50%;
-
-background:#1e88ff;
-
-box-shadow:0 0 20px #1e88ff;
+margin-top:50px;
 
 }
 
-.timeline-content{
+.status-box{
 
-background:#11161d;
+background:#10151d;
 
-padding:25px;
+padding:30px;
 
-border-radius:20px;
+border-radius:22px;
 
 border:1px solid rgba(255,255,255,.08);
 
-transition:.3s;
+transition:.35s;
 
 }
 
-.timeline-content:hover{
+.status-box:hover{
+
+transform:translateY(-8px);
+
+border-color:#1e88ff;
+
+box-shadow:0 20px 40px rgba(30,136,255,.25);
+
+}
+
+.status-box h3{
+
+margin-bottom:18px;
+
+font-size:24px;
+
+}
+
+.bar{
+
+height:12px;
+
+background:#222;
+
+border-radius:20px;
+
+overflow:hidden;
+
+margin-bottom:15px;
+
+}
+
+.fill{
+
+height:100%;
+
+background:linear-gradient(90deg,#1e88ff,#55b8ff);
+
+border-radius:20px;
+
+}
+
+.status-box span{
+
+font-weight:700;
+
+color:#1e88ff;
+
+}
+/* SERVICE */
+
+.service-grid{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.service-card{
+
+display:flex;
+
+align-items:center;
+
+gap:25px;
+
+background:#10151d;
+
+padding:28px;
+
+border-radius:22px;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.service-card:hover{
 
 transform:translateX(10px);
 
 border-color:#1e88ff;
 
+box-shadow:0 20px 40px rgba(30,136,255,.25);
+
 }
 
-.timeline-content h3{
+.service-icon{
+
+width:80px;
+
+height:80px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+background:#1e88ff;
+
+flex-shrink:0;
+
+}
+
+.service-text h3{
+
+margin-bottom:12px;
+
+font-size:24px;
 
 color:#1e88ff;
 
-margin-bottom:10px;
-
 }
 
+.service-text p{
 
+line-height:1.8;
 
-/ ===========================
-   GALERIE
-=========================== /
+color:#d5d5d5;
 
-.gallery-grid{
+}
+/* PREMIUM GALERIE */
+
+.gallery-layout{
+
+margin-top:50px;
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+grid-template-columns:3fr 1fr;
 
 gap:25px;
 
 }
 
-.gallery-item{
+.gallery-main{
 
-position:relative;
+height:600px;
 
 overflow:hidden;
 
-border-radius:20px;
+border-radius:25px;
 
-cursor:pointer;
+background:#111;
 
 }
 
-.gallery-item img{
+.gallery-main img{
 
 width:100%;
 
-height:260px;
+height:100%;
 
 object-fit:cover;
 
-transition:.45s;
-
-display:block;
+transition:.5s;
 
 }
 
-.gallery-item:hover img{
+.gallery-main:hover img{
 
-transform:scale(1.08);
-
-}
-
-.gallery-overlay{
-
-position:absolute;
-
-left:0;
-
-right:0;
-
-bottom:0;
-
-padding:18px;
-
-background:linear-gradient(transparent,rgba(0,0,0,.85));
+transform:scale(1.02);
 
 }
 
-.gallery-overlay h3{
-
-font-size:22px;
-
-}
-
-
-
-/ ===========================
-   DOKUMENTE
-=========================== /
-
-.document-grid{
+.gallery-thumbs{
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:25px;
+gap:15px;
 
 }
 
-.document-card{
+.gallery-thumbs img{
 
-background:#12161e;
+width:100%;
 
-padding:30px;
+height:90px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+cursor:pointer;
+
+transition:.3s;
+
+opacity:.75;
+
+}
+
+.gallery-thumbs img:hover{
+
+opacity:1;
+
+transform:scale(1.04);
+
+border:2px solid #1e88ff;
+
+}
+
+@media(max-width:900px){
+
+.gallery-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-main{
+
+height:320px;
+
+}
+
+.gallery-thumbs{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.gallery-thumbs img{
+
+height:80px;
+
+}
+
+}
+/* FOOTER /
+
+footer{
+
+margin-top:120px;
+
+background:#080b10;
+
+padding:70px 8% 30px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:40px;
+
+}
+
+.footer-grid h2,
+.footer-grid h3{
+
+color:#1e88ff;
+
+margin-bottom:18px;
+
+}
+
+.footer-grid p{
+
+color:#cfd6df;
+
+line-height:1.8;
+
+}
+
+.footer-grid ul{
+
+list-style:none;
+
+}
+
+.footer-grid li{
+
+margin-bottom:12px;
+
+}
+
+.footer-grid a{
+
+color:#cfd6df;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-grid a:hover{
+
+color:#1e88ff;
+
+padding-left:8px;
+
+}
+
+.qr{
+
+width:180px;
+
+background:white;
+
+padding:12px;
+
+border-radius:15px;
+
+}
+
+footer hr{
+
+margin:45px 0 25px;
+
+border:none;
+
+height:1px;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.copyright{
+
+text-align:center;
+
+color:#777;
+
+}
+
+
+
+/ TOP BUTTON */
+
+#topBtn{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:60px;
+
+height:60px;
+
+border:none;
+
+border-radius:50%;
+
+background:#1e88ff;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 10px 30px rgba(30,136,255,.4);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#topBtn:hover{
+
+transform:translateY(-6px);
+
+}
+/* DOKUMENTE */
+
+.docs-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.doc-card{
+
+background:#10151d;
+
+padding:35px;
 
 border-radius:22px;
 
@@ -874,21 +647,49 @@ transition:.35s;
 
 }
 
-.document-card:hover{
+.doc-card:hover{
 
 transform:translateY(-10px);
 
 border-color:#1e88ff;
 
+box-shadow:0 20px 45px rgba(30,136,255,.25);
+
 }
 
-.document-card a{
+.doc-card i{
+
+font-size:55px;
+
+color:#1e88ff;
+
+margin-bottom:20px;
+
+}
+
+.doc-card h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.doc-card p{
+
+color:#cfd6df;
+
+line-height:1.7;
+
+margin-bottom:25px;
+
+}
+
+.doc-card a{
 
 display:inline-block;
 
-margin-top:20px;
-
-padding:12px 25px;
+padding:12px 26px;
 
 background:#1e88ff;
 
@@ -900,284 +701,176 @@ border-radius:30px;
 
 font-weight:600;
 
+transition:.3s;
+
 }
 
+.doc-card a:hover{
 
+background:#0d6efd;
 
-/ ===========================
-   KOSTEN
-===========================
-= /
+transform:translateY(-3px);
 
-.total-box{
+}
+/* BMW COCKPIT */
 
-margin-top:45px;
+.cockpit{
 
-padding:40px;
+display:grid;
 
-text-align:center;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:35px;
+
+margin:90px auto;
+
+}
+
+.cockpit-card{
+
+background:#11161d;
+
+padding:35px;
 
 border-radius:25px;
 
-background:linear-gradient(135deg,#1e88ff,#005ed9);
-
-}
-
-.total-box h1{
-
-font-size:60px;
-
-margin-top:15px;
-
-}
-
-
-
-/ ===========================
-   QR CODE
-=========================== /
-
-.qr-container{
-
 text-align:center;
 
-}
+border:1px solid rgba(255,255,255,.08);
 
-.qr-container img{
-
-width:230px;
-
-background:white;
-
-padding:15px;
-
-border-radius:20px;
-
-margin:30px 0;
+transition:.35s;
 
 }
 
+.cockpit-card:hover{
 
+transform:translateY(-10px);
 
-/ ===========================
-   FOOTER
-=========================== /
+border-color:#1e88ff;
 
-footer{
-
-margin-top:100px;
-
-padding:50px 20px;
-
-text-align:center;
-
-background:#090b10;
-
-border-top:1px solid rgba(255,255,255,.08);
+box-shadow:0 20px 45px rgba(30,136,255,.30);
 
 }
 
-.footer-content h2{
+.circle{
 
-color:#1e88ff;
+width:160px;
 
-margin-bottom:10px;
+height:160px;
 
-}
+margin:auto;
 
+border-radius:50%;
 
+border:8px solid #1e88ff;
 
-/ ===========================
-   SCROLLBAR
-=========================== /
-
-::-webkit-scrollbar{
-
-width:10px;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-background:#1e88ff;
-
-border-radius:30px;
-
-}
-
-::-webkit-scrollbar-track{
-
-background:#0d1016;
-
-}
-
-
-
-/ ===========================
-   RESPONSIVE
-=========================== /
-
-@media(max-width:900px){
-
-nav{
-
-padding:18px 5%;
+display:flex;
 
 flex-direction:column;
-
-gap:15px;
-
-}
-
-nav ul{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:18px;
-
-}
-
-.hero-content h1{
-
-font-size:48px;
-
-}
-
-.hero-content p{
-
-font-size:18px;
-
-}
-
-.hero-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-section{
-
-width:94%;
-
-}
-
-}
-
-@media(max-width:600px){
-
-.hero-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.cards,
-.dashboard-grid,
-.feature-grid,
-.gallery-grid,
-.document-grid{
-
-grid-template-columns:1fr;
-
-}
-
-h2{
-
-font-size:34px;
-
-}
-
-.total-box h1{
-
-font-size:42px;
-
-}
-
-}
-
-
-
-/ ===========================
-   FADE ANIMATION
-=========================== */
-
-section{
-
-animation:fadeUp .7s ease;
-
-}
-
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-/* LIGHTBOX */
-
-#lightbox{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-background:rgba(0,0,0,.95);
-
-display:none;
 
 justify-content:center;
 
 align-items:center;
 
-z-index:99999;
+margin-bottom:25px;
+
+box-shadow:0 0 35px rgba(30,136,255,.35);
 
 }
 
-#lightbox img{
+.circle h2{
 
-max-width:90%;
+font-size:42px;
 
-max-height:90%;
-
-border-radius:20px;
-
-box-shadow:0 0 50px rgba(30,136,255,.45);
+margin:0;
 
 }
 
-#close{
+.circle span{
 
-position:absolute;
+font-size:18px;
 
-top:40px;
+color:#1e88ff;
 
-right:60px;
+font-weight:700;
 
-font-size:60px;
+}
 
-cursor:pointer;
+.cockpit-card p{
 
-color:white;
+font-size:18px;
+
+color:#d5d5d5;
+
+}
+/* TECHNISCHE DATEN */
+
+.specs{
+
+margin:120px 0;
+
+}
+
+.specs-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-top:45px;
+
+}
+
+.spec-card{
+
+background:#11161d;
+
+padding:30px;
+
+border-radius:22px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.spec-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#1e88ff;
+
+box-shadow:0 20px 40px rgba(30,136,255,.25);
+
+}
+
+.spec-card i{
+
+font-size:42px;
+
+color:#1e88ff;
+
+margin-bottom:18px;
+
+}
+
+.spec-card h3{
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.spec-card p{
+
+color:#d5d5d5;
+
+font-size:17px;
 
 }
